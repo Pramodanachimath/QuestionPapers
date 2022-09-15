@@ -1,0 +1,194 @@
+juniT
+
+1
+Which of the following method will be called only once while executing  JUnit test case?
+
+
+
+ The method annotated with @BeforeEach
+ The method annotated with @BeforeOnce
+ The method annotated with @Before
+ The method annotated with @BeforeAll
+
+2
+Which of the method will be called before executing each testcase?
+
+
+ The method annotated with @BeforeAll
+ The method annotated with @BeforeEach
+ The method annotated with @Before
+ The method annotated with @BeforeAll
+
+3
+What is the significance of @AfterAll?
+
+ Runs after all the test methods and after the method annotated @AfterEach
+ Runs after all the test methods and after the method annotated @After
+ Runs after each test method
+ Runs after each test method and after the method annotated @After
+
+4
+Identify the annotation to run a test suite
+
+ The class should be annotated with @TestClass
+ The class should be annotated with @SelectTest
+ The class should be annotated with @SelectPackages
+ The class should be annotated with @TestSuite
+
+5
+Choose the CORRECT answer
+
+ TestSuite helps to run multiple test cases from a single clas
+ JUnit is used to test classes with external dependencies
+ Mockito is used to test classes with external dependencies
+ The JUnit testcase can have a return type
+
+6
+Choose the CORRECT answer
+
+
+ while using assertThrows, if the method throws an exception the test case succeeds
+ while using assertThrows, if the method does not throw an exception the test case succeeds
+
+7
+Identify the right syntax for creating a testcase
+
+ @Test public String testWithdraw(){ return null; }
+ @Test public void testWithdraw(){ }
+ @Test public int testWithdraw(){ return 0; }
+ @Testcase private String testWithdraw(){ return null; }
+
+8
+How to ignore a testcase in JUnit5?
+
+ @Ignore
+ @Disabled
+ @TestIgnore
+ @TestDisabled
+
+9
+What annotation can be used to give a name for the testcase in the dashboard?
+
+ @TestName
+ @DisplayName
+ @ShowName
+ @Name
+
+10
+What will be the result of the following code, being executed?
+
+ @Test public void testAdd() { System.out.println("Not yet implemented"); }
+
+ Test succeeds
+ Test fails
+
+11
+What will be the result of the following code, being executed?
+
+ @Test public void testAdd() { fail("Not yet implemented"); }
+
+ Test succeeds
+ Test fails
+
+12
+The annotation that is used to create a proxy object is
+
+ @Spy
+ @InjectMocks
+ @InjectSpy
+ @Mock
+
+13
+Which of the following Mockito method does type checking?
+
+ when() thenReturn()
+ doReturn() when()
+
+14
+Which of the following method is used to mock a method that throws an exception?
+
+ when() thenThrow()
+ doNothing() when()
+ when() thenReturn()
+ doReturn() when()
+
+15
+Which of the following method is used to mock a method that does not return anything?
+
+ doReturn() when()
+ doThrow() when()
+ when() thenReturn()
+ doNothing() when()
+
+16
+Which of the following method is used to mock a method that returns null?
+
+ doThrow() when()
+ doReturn() when()
+ when() thenThrow()
+ doNothing() when()
+
+17
+Which of the following static method takes the proxy object as parameter?
+
+ doReturn() when()
+ when() thenReturn()
+
+18
+Which of the following static method takes the proxy method as parameter?
+
+ doReturn() when()
+ when() thenReturn()
+
+19
+Choose the correct answer
+
+ While using @Spy, the proxy object is created and the actual methods are never called
+ While using @Mock, the proxy object is created and the actual methods are never called
+ While using @Spy, the actual object is created but the actual methods are never called
+ While using @Mock, the actual object is created and the actual methods are called
+
+20
+The annotation that creates an object of a given type and injects mocks and spies existing in a test
+
+ @Spy
+ @InjectSpy
+ @InjectMocks
+ @Mock
+
+ 21
+What is the meaning of when() thenThrow() ?
+
+ It implies that the mock method throws an exception
+ It implies that the testing method throws an exception
+ It implies that if the testing method throws exception the test case succeeds
+ It implies that if the testing method throws exception the test case fails
+
+22
+Using Mockito static and private methods also can be mocked
+
+ True
+ False
+
+23
+Which assert statement can be used to test if the object references are equal/ notequal?
+
+ assertEquals
+ assertSame
+
+ 24
+The annotation that is used to create an actual object is
+
+ @InjectMocks
+ @Mock
+ @InjectSpy
+ @Spy
+
+25
+Which of the following method is used to mock a method that returns a result?
+
+ doThrow() when()
+ when() thenthrow()
+ when() thenReturn()
+ doReturn() when()
+

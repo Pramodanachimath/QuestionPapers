@@ -1,0 +1,179 @@
+JSP
+
+1
+How to import a package (java.util) in jsp?
+
+ <c:import file=”java.util.* ”/>
+ < jsp:import file= ”java.util.* ”/>
+ <%@page import=”java.util.* ”%>
+ <jsp:include file=”java.util.*”/>
+
+2
+The code/content added inside the scriptlet will go inside ________  (lifecycle) method of JSP
+
+ _jspService()
+ _jspDestroy()
+ ._jspInit()
+ doGet()
+
+3
+Which of the following syntax will give error while using in JSP?
+
+ <%= “Have good day" %>
+ <% String message=”Have a good day”; %> <%= message %>
+ <%= “Have good day";%>
+ <% String message=”Have a good day”; out.println(message); %>
+
+4
+Which of the following method is used to retrieve the value in a jsp page?
+
+ response.getAttribute("message");
+ request.getParameter("message");
+ response.getParameter("message");
+ request.getAttribute("message");
+
+5
+Which HTTP method sends the data from the client as a query string?
+
+ TRACE
+ GET
+ POST
+ PUT
+
+6
+The annotation that defines a class as a Servlet is
+
+ @Servlet
+ @HttpServlet
+ @GenericServlet
+ @WebServlet
+
+7
+The method that is used to set the MIME type of the response as html is
+
+ response.setContentType("text/html");
+ response.setApplicaitonType("text/html");
+ response.setMIMEType("application/html");
+ request.setMIMEType("application/html");
+
+8
+The method to retrieve the value from a radio button with the name “language” is
+
+ response.getParameter(“language”);
+ request.getAttribute(“language”);
+ request.getParameter(“language”);
+ response.getAttribute(“language”);
+
+9
+In the below given code, which one does not go inside the _jspService method of the converted servlet?
+
+ <%=”Hello world”%>
+ <% int x = 10;%>
+ <%@ int x = 10;%>
+ <%! int x = 10;%>
+
+10
+Which of the following is not an implicit object of JSP?
+
+ request
+ page
+ application
+ session
+
+11
+Given 
+
+request.setAttribute(“message”,”Good Day”);
+
+
+How to retrieve this using EL in JSP
+
+ ${message}
+ $(message)
+ ${request.getParameter('message')}
+ ${request.getAttribute('message')}
+
+12
+Identify the inbuilt classes that implement Servlet interface
+
+ WebServlet, GenericServlet
+ HttpServlet, GenericServlet
+ WebServlet, HttpServlet
+ WebServlet, RequestServlet
+
+13
+Which of the following will compile without errors?
+
+ <%= "Welcome to JSP" ; %>
+ <%! "Welcome to JSP" ; %>
+ <% "Welcome to JSP" ; %>
+ <%= "Welcome to JSP" %>
+
+14
+Given: A project named DemoProject is running in port 8080 
+
+<form action="login">
+
+<Input type="text" name="name" id="uname">
+
+<Input type="text" name="city" id="ucity">
+
+<Input type="submit" name="submit">
+
+</form>
+
+What is the equivalent url that will be generated?
+
+ http://localhost:8080/DemoProject/login
+ http://localhost:8080/DemoProject/login?name='Raju'&city='Bangalore'
+ http://localhost:8080/login#name='Raju'&city='Bangalore'
+ http://localhost:8080/DemoProject/login#uname='Raju'&ucity='Bangalore'
+
+15
+Given: A project named DemoProject is running in port 8080 
+
+What is the annotation that should be used above the servlet class?
+
+ @WebServlet("/login")
+ @GenericServlet("/login")
+ @HttpServlet("/login")
+ @LoginServlet("/login")
+
+16
+While creating the servlet for a web application, it should extend____________
+
+17
+Which of the following are the lifecycle methods of Servlet?
+
+ _init(), _service(), _destroy()
+ _jspInit(), _jspService(), _jspDestroy()
+ servletinit(), service(), servletdestroy()
+ init(), service(), destroy()
+
+18
+How do you declare an instance variable using JSP?
+
+ <%= String username; %>
+ <% String username; %>
+ <%! String username; %>
+ <%@ String username; %>
+
+ 19
+Choose the WRONG answer
+
+ The service method will be called only once in the lifecycle of the servlet
+ The service method will be called for each and every request
+ The data added inside <% %> will be added inside _jspService
+ The init method will be called only once in the lifecycle of the servlet
+
+20
+How to send the data from the servlet to the JSP page?
+
+
+
+ RequestDispatcher dispatcher = request.getRequestDispatcher(); dispatcher.forward("success.jsp");
+ RequestDispatcher dispatcher = request.getRequestDispatcher("success.jsp"); dispatcher.forward();
+ RequestDispatcher dispatcher = request.getRequestDispatcher("success.jsp"); dispatcher.forward(request,response);
+ RequestDispatcher dispatcher = request.getRequestDispatcher(); dispatcher.sendRedirect("success.jsp");
+
+

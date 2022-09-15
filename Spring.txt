@@ -1,0 +1,201 @@
+Spring
+
+Name the types of  dependency injection methods in Spring
+
+ Setter-Based ,Constructor-Based
+ Setter-Based, class-based
+ Constructor based, class based
+ Only constructor based
+
+Spring support in injecting the collections?
+ True
+ False
+
+Loose coupling is achieved in Spring by using
+
+ Aspect Orientation
+ Dependency Injection
+ POJOs
+ Cohesion
+
+Choose the correct answer
+ A spring bean with scope prototype creates one bean instance
+ A spring bean with scope singleton creates multiple bean instances
+ A spring bean with scope prototype creates multiple bean instances
+ A spring bean does not have any scope
+
+-------------------- instantiates the bean lazily in Spring
+
+ ApplicationContext
+ BeanFactory
+ SessionFactory
+ SpringFactory
+
+# 6
+What is the default scope of bean in spring?
+ prototype
+ request
+ session
+ singleton
+
+# 7
+Given the application structure as
+
+com.example
+
+@SpringBootApplication  
+
+class Application{ }
+
+com.myapp.service
+
+@Service
+
+  class GreetServiceImpl{ }
+
+What modification should be done to make this application work? Choose the correct answer
+
+ The GreetServiceImpl should be annotated with @Configuration
+ The GreetServiceImpl should be annotated with @ComponentScan("com")
+ The Application class should be annotated with @ComponentScan("com")
+ The Application class should be annotated with @Configuration
+
+8
+Spring needs an application server to run the application
+
+ True
+ False
+
+9
+The annotation that marks a java class as a spring bean
+
+ @Qualifier
+ @Component
+ @Inject
+ @Select
+
+10
+------------  is a concept where spring automatically wires the dependencies to the java class.
+
+ Cohesion
+ Loose Coupling
+ Autowiring
+ Dependency Injection
+
+11
+The spring boot application can be deployed
+ Only as a WAR
+ Only as a JAR
+ Both as A WAR or A JAR
+ None of the above
+
+12
+Which of  the following is NOT a feature of SpringBoot?
+ Create ready to run spring application
+ Has embedded servers which makes a jar to run in the browser
+ Boot relies on XML heavily for creating spring application
+ Automatically configures Spring
+
+13
+The annotation that is used to make a java class as a REST API is
+
+ @Component
+ @Controller
+ @RestController
+ @RestComponent
+
+14
+The annotation that is marks  a java class as a MVC controller in Spring Boot is
+
+ @RestController
+ @Controller
+ @MVCController
+ @Component
+
+15
+When more than one bean is available , which annotation is used to select a specific bean
+
+ @Component
+ @Autowired
+ @Inject
+ @Qualifier
+
+16
+If a java class has spring bean definitions, then it should be annotated with _____  to be used by the IOC container
+
+ @Configuration
+ @Bean
+ @Controller
+ @Component
+
+17
+While using Spring with JDBC the DAO implementation classes should be annotated with
+
+ @Service
+ @Dao
+ @Repository
+ @RestController
+
+18
+Spring MVC uses ___________ servlet to handle HTTP request and response
+ HttpServlet
+ SpringServlet
+ Dispatcher Servlet
+ HandlerServlet
+
+19
+Which of the following is FALSE about Controller?
+ A class annotated with @Controller will act as a controller
+ The controller returns a model and view instance or a view name
+ The controller returns the view as an Object/String from the method
+ The controller is responsible for preparing a model Map with data and selecting a view name
+
+ 20
+The annotation that is used to maps the urls to methods in a controller is
+
+ @Controller
+ @RequestMapping
+ @ResponseMapping
+ @RequestParam
+
+21
+The annotation that is used to retrieve the parameter that is  added along with the url is_______
+
+ @QueryParam
+ @PathParam
+ @RequestParam
+ @PathVariable
+
+ 22
+Choose the WRONG answer about @RequestParam
+ It is used to bind the request parameters to method parameters.
+ Type Conversion happens automatically if the datatype is integer
+ It is used to map request URLS to methods in a controller
+ It is used with GET method
+
+23
+The methods  to handle the exception in the controller should be annotated with
+
+ @ExceptionHandler
+ @Exception
+ @Handler
+ @ControllerAdvice
+
+24
+Find the correct syntax of the method for the given url 
+
+http://localhost:8080/books/id/2
+
+ @GetMapping("/books/id/{bookId}") public String show(@RequestParam("bookId") int bookid){ return "hello"; }
+ @GetMapping("/books/id/{bookId}") public String show(@PathVariable("bookId") int bookid){ return "hello"; }
+ @GetMapping("/books/id") public String show(@RequestParam("bookId") int bookid){ return "hello"; }
+ @GetMapping("/books/id") public String show(@PathVariable("bookId") int bookid){ return "hello"; }
+
+25
+Which of the following annotation is used above the class to handle the exceptions from any controller?
+
+ @ExceptionHandler
+ @ControllerHandler
+ @Handler
+ @ControllerAdvice
+
